@@ -67,3 +67,7 @@ console.log(3**(h-1));
 //let totalinfected = 5**(h-1);
 //console.log(totalinfected);
 
+//h=1 -> 1
+//h=2 -> 2 new person = 3 totalstudent
+//h= 3 -> 6 new peson = 9 person 
+
