@@ -124,3 +124,43 @@ if({ } && ![] && "check" && marks){
 else{
     console.log("marks not btw 2 and 5");
 }
+
+// 12 months
+//month 1-> jan
+//month 2-> feb
+let month = 5;
+if (month ==1){
+    console.log("jan");
+}if (month ==2){
+    console.log("feb");
+}
+else if (month ==3){
+    console.log("Mar");
+}
+else if (month ==4){
+    console.log("April");
+}
+else if (month ==5){
+      console.log("May");
+}
+else if (month ==6){
+    console.log("June");
+}
+else if (month ==7){
+    console.log("July");
+}
+else if (month ==8){
+    console.log("Aug");
+}
+else if (month ==9){
+    console.log("Sept");
+}
+else if (month ==10){
+    console.log("Oct");
+}
+else if (month ==11){
+    console.log("Nov");
+}
+else  {
+    console.log("Dec");
+}
