@@ -107,13 +107,177 @@
 // }
 // console.log(prod);
 // reverse the number 
+// let n = 12345185458;
+// let rev = "";
+// while(n>0){
+// let last_digit=n%10;
+// // console.log(last_digit);
+// rev = rev+ last_digit;
+// n=Math.floor(n/10);
+// }
+// console.log(rev);
+// let n=12;
+// let i=1;
+// let sum=0;
+// for(i; i<=n; i++){
+// 		if(n%10)
+// 		sum+=i;
+// 	}
+//   console.log(sum);
+// const readline = require('readline').createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
-let n = 12345185458;
-let rev = "";
-while(n>0){
-let last_digit=n%10;
-// console.log(last_digit);
-rev = rev+ last_digit;
-n=Math.floor(n/10);
+// let inputs = [];
+
+// readline.question('', day => {
+//   inputs.push(Number(day));
+//   readline.question('', month => {
+//     inputs.push(Number(month));
+//     readline.question('', year => {
+//       inputs.push(Number(year));
+//       readline.close();
+
+//        day = inputs[0];
+//        month = inputs[1];
+//        year = inputs[2];
+
+//       // TODO: Add logic here to check if the date is valid
+//       let daysInMonth=[0,31,29 || 28, 31,30,31,30,31,31,30,31,30,31];
+//       console.log(daysInMonth[parseInt(month)]);
+//       switch(daysInMonth){
+//         case 1:
+//         console.log("January");
+//         break;
+//         case 2:
+//         console.log("February");
+//         break;
+//         case  3:
+//         console.log("March");
+//         break;
+//         case 4:
+//         console.log("April");
+//         case 5:
+//         console.log("May");
+//         break;
+//         case 6:
+//         console.log("June");
+//         break;
+//         case 7:
+//         console.log("July");
+//         break;
+//         case 8:
+//         console.log("August");
+//         break;
+//         case 9:
+//         console.log("September");
+//         case 10:
+//         console.log("October");
+//         break;
+//         case 12:
+//         console.log("December");
+//         default:
+//         console.log("not a month");
+//       }
+//     //  leap year
+//     let Y = year;
+//     if(Y%400){
+//       console.log("leap year");
+//     }
+//     else if(Y%100){
+//       console.log("not a leap year");
+//     }
+//     else if (Y%4){
+//       console.log("leap year");
+//     };
+//     if(day == month == year){
+//       console.log("Valid");
+//     }
+//     else{
+//       console.log("Invalid");
+//     }
+//   });
+// });
+// })
+//   const readline = require('readline').createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// let inputs = [];
+
+// readline.question('', day => {
+//   inputs.push(Number(day));
+//   readline.question('', month => {
+//     inputs.push(Number(month));
+//     readline.question('', year => {
+//       inputs.push(Number(year));
+//       readline.close();
+
+      
+
+      // TODO: Add logic here to check if the date is valid
+      let daysInMonth = false;
+      let i = 1;
+      while(i <= 31){
+        if(day == i){
+          daysInMonth = true;
+        }
+        i++;
+      }
+
+      let checkMonth = false;
+      let j = 1;
+      while(j <= 12){
+        if(month == j){
+          checkMonth = true
+        }
+        j++;
+      }
+
+      let checkYear = false;
+      if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+        checkYear = true;
+      }
+      else if(year.length == 4) {
+        checkYear = true;
+      }
+
+      if(daysInMonth && checkMonth && checkYear){
+        console.log("Valid");
+      }
+      else{
+        console.log("Invalid");
+      }
+   
+   
+  
+
+
+let days = 400;
+let remaningDays = 0, years = 0, months = 0, weeks = 0;
+
+while(days){
+  if(days >= 365){
+    years++;
+    days -= 365;
+  }
+  else if(days >= 30){
+    months++;
+    days -= 30;
+  }
+  else if(days >= 7){
+    weeks++;
+    days -= 7;
+  }
+  else{
+    remaningDays++;
+    days--;
+  }
 }
-console.log(rev);
+
+console.log("Remaining Days :", remaningDays);
+console.log("Years :", years);
+console.log("Months :", months);
+  
