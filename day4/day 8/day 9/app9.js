@@ -88,11 +88,32 @@
 //  }  
 //  console.log(sum);
  //given a number count digit
- let n= 1002;
- let count=0;
- while(n>0 ){
-    let last_digit=n%10;
-    count++;
-    n=Math.floor(n/10);
- }
- console.log(count);
+//  let n= 10021545;
+//  let count=0;
+//  while(n>0 ){
+//     let last_digit=n%10;
+//     count++;
+//     n=Math.floor(n/10);
+//  }
+//  console.log(count);
+// find the product of the digit 
+// let n=12359;
+// let prod =1;
+// let temp =0;
+// for(let n=12359; n>0;){
+//    temp=n%10;
+//    prod=prod*temp;
+//    n=Math.floor(n/10);
+// }
+// console.log(prod);
+// reverse the number 
+
+let n = 12345185458;
+let rev = "";
+while(n>0){
+let last_digit=n%10;
+// console.log(last_digit);
+rev = rev+ last_digit;
+n=Math.floor(n/10);
+}
+console.log(rev);
