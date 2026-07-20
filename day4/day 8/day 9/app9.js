@@ -130,7 +130,6 @@
 // });
 
 // let inputs = [];
-
 // readline.question('', day => {
 //   inputs.push(Number(day));
 //   readline.question('', month => {
