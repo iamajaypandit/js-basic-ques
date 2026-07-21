@@ -217,66 +217,80 @@
       
 
       // TODO: Add logic here to check if the date is valid
-      let daysInMonth = false;
-      let i = 1;
-      while(i <= 31){
-        if(day == i){
-          daysInMonth = true;
-        }
-        i++;
-      }
+//       let daysInMonth = false;
+//       let i = 1;
+//       while(i <= 31){
+//         if(day == i){
+//           daysInMonth = true;
+//         }
+//         i++;
+//       }
 
-      let checkMonth = false;
-      let j = 1;
-      while(j <= 12){
-        if(month == j){
-          checkMonth = true
-        }
-        j++;
-      }
+//       let checkMonth = false;
+//       let j = 1;
+//       while(j <= 12){
+//         if(month == j){
+//           checkMonth = true
+//         }
+//         j++;
+//       }
 
-      let checkYear = false;
-      if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
-        checkYear = true;
-      }
-      else if(year.length == 4) {
-        checkYear = true;
-      }
+//       let checkYear = false;
+//       if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+//         checkYear = true;
+//       }
+//       else if(year.length == 4) {
+//         checkYear = true;
+//       }
 
-      if(daysInMonth && checkMonth && checkYear){
-        console.log("Valid");
-      }
-      else{
-        console.log("Invalid");
-      }
+//       if(daysInMonth && checkMonth && checkYear){
+//         console.log("Valid");
+//       }
+//       else{
+//         console.log("Invalid");
+//       }
    
    
   
 
 
-let days = 400;
-let remaningDays = 0, years = 0, months = 0, weeks = 0;
+// let days = 400;
+// let remaningDays = 0, years = 0, months = 0, weeks = 0;
 
-while(days){
-  if(days >= 365){
-    years++;
-    days -= 365;
+// while(days){
+//   if(days >= 365){
+//     years++;
+//     days -= 365;
+//   }
+//   else if(days >= 30){
+//     months++;
+//     days -= 30;
+//   }
+//   else if(days >= 7){
+//     weeks++;
+//     days -= 7;
+//   }
+//   else{
+//     remaningDays++;
+//     days--;
+//   }
+// }
+
+// console.log("Remaining Days :", remaningDays);
+// console.log("Years :", years);
+// console.log("Months :", months);
+  // check prime number 
+let n = 7878;
+  let count = 0;
+  for(let i=1; i<=n; i++){
+    if(n%i==0){
+      count++;
+    }
   }
-  else if(days >= 30){
-    months++;
-    days -= 30;
-  }
-  else if(days >= 7){
-    weeks++;
-    days -= 7;
+  if(count===2){
+  console.log(n+ " is a prime number");
   }
   else{
-    remaningDays++;
-    days--;
+    console.log(n+ " is not a prime number");
   }
-}
-
-console.log("Remaining Days :", remaningDays);
-console.log("Years :", years);
-console.log("Months :", months);
-  
+  readline.close();
