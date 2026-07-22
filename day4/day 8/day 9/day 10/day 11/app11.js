@@ -110,6 +110,7 @@ let n =15;
 function isPrime(i){
 for(let i =2; i<n; i++)
     if(isPrime(i)){
+
         return true;
     }
         else{
