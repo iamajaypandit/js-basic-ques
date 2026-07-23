@@ -79,22 +79,22 @@ let a = 30;
 //     console.log(a); //30
 //    }
 //    console.log(a); //20
-  {
-    var a =20;
-   {
-    var a =30; 
-    console.log(a); //30
-   }
-   console.log(a); //30
- }
+//   {
+//     var a =20;
+//    {
+//     var a =30; 
+//     console.log(a); //30
+//    }
+//    console.log(a); //30
+//  }
  //Hoisting->
  //hoisting is the process of processing declaration before the execution.
  //var is hoisted 
- console.log(a);//undefined 
- var a=20;
- var b =20;
- console.log(b);//20
- // let is hoisted 
- //var that is declred with let can not be declared before declaration 
- console.log(a);
- let a = 20;
+//  console.log(a);//undefined 
+//  var a=20;
+//  var b =20;
+//  console.log(b);//20
+//  // let is hoisted 
+//  //var that is declred with let can not be declared before declaration 
+//  console.log(a);
+//  let a = 20;
