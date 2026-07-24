@@ -97,3 +97,59 @@ console.log(arr);//[9,7,10,4,2]
 let arr = [9,7,3,4,2];
 arr.splice(1,0,4,3);
 console.log(arr); //[9,4,3,7,3,4]
+
+//Check if array is Increasing
+//Given an array arr with n positive integers 
+// check whether it is strictly increasing or not.
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+let input = [];
+
+rl.on("line", (line) => {
+  input.push(line);
+});
+
+rl.on("close", () => {
+  let t = Number(input[0]);
+  let index = 1;
+
+  while (t--) {
+    let n = Number(input[index++]);
+    let arr = input[index++].split(" ").map(Number);
+
+    let isIncreasing = true;
+
+    for (let i = 1; i < n; i++) {
+      if (arr[i] <= arr[i - 1]) {
+        isIncreasing = false;
+        break;
+      }
+    }
+
+    if (isIncreasing) {
+      console.log("YES");
+    } else {
+      console.log("NO");
+    }
+  }
+});
+
+
+//  Count Numbers Greater Than 35
+//Write a program to count the elements in 
+// an array which are greater than 35.
+function ArrayProblem2(n, arr) {
+let count =0;
+  for(let i = 0; i< n; i++){
+    if(arr[i]>35){
+      count = count + 1;
+    } 
+  }
+  return count;
+}
