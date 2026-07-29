@@ -33,7 +33,7 @@
 // break;
 // }
 // }
-// console.log(secondindex=firstindex-1);
+// console.log(secondindex-firstindex-1);
 
 //approach 2
 // let arr = [1,3,4,6,9,10];
