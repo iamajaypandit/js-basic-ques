@@ -48,78 +48,92 @@
 // for(let i =0; i<words.length; i++){
 //     words[i]=words[i].split("").reverse().join("");
 // }
-// console.log(words.join(" "));
+// // console.log(words.join(" "));
 
 
-//Objects
+// //Objects
 
-let chair = {
-    type: "office chair",
-    price: "5000",
-    color: "grey",
-    manufacturer: "comfort chair",
-    legs: "4 legs",
-}
-console.log(chair);
-
-//student 
-//methods inside obj
-let student ={
-    name: "ajay",
-    batch:"10obp",
-    printName(){
-        console.log("student name is",student.name);
-    }
-}
-
-//accessing key
-//dot notation
-console.log(student.name);// ajay
-//batch
-console.log(student.batch);
-student.printName();
-
-//Bract notation
-console.log(student["name"]); // ajay
-console.log(student[batch]);// 10obp
-student["printName"](); //function invocation using bracket notation
-
-// when key is gien as a variable 
-let person = {
-    person1: "abhi",
-    person2: "ajay",
-    person3 = "kundan"
-}
-let p = "person1";
-//console.log(person.p);// wrong
-//console.log(person["p"]);//wrong
-console.log(person[p]);// abhi
-
-// if person is greater than 19
-//print eligible otherwise person is not eligible
-let person ={
-    name: "abhishek",
-    age:10
-}
-
-// if(age>18){
-//     console.log("person is eligible");
+// let chair = {
+//     type: "office chair",
+//     price: "5000",
+//     color: "grey",
+//     manufacturer: "comfort chair",
+//     legs: "4 legs",
 // }
-// else{
-//     console.log("person is not eligible");
+// console.log(chair);
+
+// //student 
+// //methods inside obj
+// let student ={
+//     name: "ajay",
+//     batch:"10obp",
+//     printName(){
+//         console.log("student name is",student.name);
+//     }
 // }
-//or
-console.log(person.age>18?"eligible":"not eligible");
 
-// create a function inside obj and if age is greater than 18print eligible 
-//otherwise not eligibale
+// //accessing key
+// //dot notation
+// console.log(student.name);// ajay
+// //batch
+// console.log(student.batch);
+// student.printName();
 
-let person ={
-    name: "ajay",
-    age:18,
-    isEligible(){
-        console.log(person.age>18?"eligible":"not eligible");
-    }
+// //Bract notation
+// console.log(student["name"]); // ajay
+// console.log(student[batch]);// 10obp
+// student["printName"](); //function invocation using bracket notation
+
+// // when key is gien as a variable 
+// let person = {
+//     person1: "abhi",
+//     person2: "ajay",
+//     person3 = "kundan"
+// }
+// let p = "person1";
+// //console.log(person.p);// wrong
+// //console.log(person["p"]);//wrong
+// console.log(person[p]);// abhi
+
+// // if person is greater than 19
+// //print eligible otherwise person is not eligible
+// let person ={
+//     name: "abhishek",
+//     age:10
+// }
+
+// // if(age>18){
+// //     console.log("person is eligible");
+// // }
+// // else{
+// //     console.log("person is not eligible");
+// // }
+// //or
+// console.log(person.age>18?"eligible":"not eligible");
+
+// // create a function inside obj and if age is greater than 18print eligible 
+// //otherwise not eligibale
+
+// let person ={
+//     name: "ajay",
+//     age:18,
+//     isEligible(){
+//         console.log(person.age>18?"eligible":"not eligible");
+//     }
+// }
+// person.isEligible();
+
+const student = {
+  name: "John",
+	age: 20,
+	city: "Pune",
+};
+
+// Function to get all keys from the object
+function getKeys(obj) {
+  return Object.keys(obj);
 }
-person.isEligible();
+
+// Testing the function
+console.log(getKeys(student)); // Output: ["name"]
 
