@@ -77,7 +77,7 @@ let person ={
 console.log(person.firstName+" "+person.address.city);//Ajay Pune
 
 // update
-// update pincode to 410413
+// update pincode to 410413-
  person.address.pincode = 410413
 console.log(person);
 
