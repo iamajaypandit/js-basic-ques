@@ -11,7 +11,7 @@
 //     console.log(obj[key]);// abhishek yash ajay
 //  }
 
- // Note1 = internally key of obj os converted to string
+ // Note1 = internally key of obj is converted to string
  // number can be the key
  // types of key 
 //  let obj ={
@@ -29,7 +29,6 @@
 //  let obj ={
 //     [key]:2,
 //  }
-
  // WAP to find all the elements frequncey of the array 
 //  let arr = [1,2,3,4,5,5,5,5];
 //  let freq ={};
