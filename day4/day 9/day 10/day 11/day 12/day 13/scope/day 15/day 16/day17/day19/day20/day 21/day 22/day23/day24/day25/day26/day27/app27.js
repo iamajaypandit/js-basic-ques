@@ -146,46 +146,96 @@ console.log(result);
 
 // let user = structuredClone(person);
 // user.address.
-// console.log(user);
+// // console.log(user);
 
-// linear serach 
-// let arr =  [4,5,6,9,8];
-// let target =9;
-// function search(arr,target){
-// for(let i=0; i<arr.length; i++){
-//     if(arr[i] === target){
-//        return true;
+// // linear serach 
+// // let arr =  [4,5,6,9,8];
+// // let target =9;
+// // function search(arr,target){
+// // for(let i=0; i<arr.length; i++){
+// //     if(arr[i] === target){
+// //        return true;
+// //     }
+// //     return false;
+// // }
+// // }
+// // console.log(search(arr,target));
+
+// let student = [
+//     {
+//         name:"Abhi",
+//         class:9
+//     },
+//     {
+//         name:"Aakriti",
+//         class:10
+//     },
+//     {
+//         name:"sandeep",
+//         class:12
+//     }
+// ];
+
+
+// let target =sandeep;
+
+// function search(arr, target){
+//     for (let item of arr){
+//         if(item.name === target){
+//             return true;
+//         }
 //     }
 //     return false;
 // }
+// console.log(search(student, target));
+
+// let arr = [1,2,3,4];
+// let sum =0;
+// for(let i = 0; i<arr.length; i++){
+//     sum=sum+arr[i];
 // }
-// console.log(search(arr,target));
+// console.log(sum);
+// let arr = [1,2,3,4,12];
+// let max=arr[0];
+// for(let i=0; i<arr.length; i++){
+//     if(max<arr[i]){
+//     max=arr[i];
+//     }
+// }
+// console.log(max);
+// let a =8;
+// console.log(a);
+//  a=9;
+// console.log(a);
+// function print(){
+//     let num = 8;
+//  console.log(num);
+// }
+// print();
+// console.log(num);
 
-let student = [
-    {
-        name:"Abhi",
-        class:9
-    },
-    {
-        name:"Aakriti",
-        class:10
-    },
-    {
-        name:"sandeep",
-        class:12
-    }
-];
+// var a=11;
+// console.log(a); // in acse of var the variable will be assigned as undefined
+//  var a =7;
+//  console.log(a);
 
-
-let target =sandeep;
-
-function search(arr, target){
-    for (let item of arr){
-        if(item.name === target){
-            return true;
-        }
-    }
-    return false;
+//  function print(){
+//     var a = 4;
+//     console.log(a);
+//  }
+//  print();
+//  console.log(a);
+// const num=9;
+// console.log(num);
+// num =10;
+// console.log(num);
+function print(){
+   const num=9;
+    console.log(num);
 }
-console.log(search(student, target));
+print();
+console.log(num);
+
+
+
 
