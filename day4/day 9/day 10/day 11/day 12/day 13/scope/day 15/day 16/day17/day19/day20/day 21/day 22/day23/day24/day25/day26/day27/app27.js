@@ -31,36 +31,36 @@
 
 // Question 2
 
-let persons=[
-    {
-        name:"Abhishek",
-        address:{
-        city:"Pune"
-        }
-    },
-    {
-        name:"Pawan",
-        address:{
-        city:"Pune"
-        }
-    },
-    {
-        name:"Hemant",
-        address:{
-        city:"Lucknow"
-        }
-    }
-]
+// let persons=[
+//     {
+//         name:"Abhishek",
+//         address:{
+//         city:"Pune"
+//         }
+//     },
+//     {
+//         name:"Pawan",
+//         address:{
+//         city:"Pune"
+//         }
+//     },
+//     {
+//         name:"Hemant",
+//         address:{
+//         city:"Lucknow"
+//         }
+//     }
+// ]
 
-let result ={};
-for(let person of persons){
-    if(person.address.city in result){
-    result[person.address.city].push[person.name];
-} else {
-    result[person.address.city]=[person.name];
-}
-}
-console.log(result);
+// let result ={};
+// for(let person of persons){
+//     if(person.address.city in result){
+//     result[person.address.city].push[person.name];
+// } else {
+//     result[person.address.city]=[person.name];
+// }
+// }
+// console.log(result);
 
 // obj destructuring 
 // // predict output
@@ -125,15 +125,15 @@ console.log(result);
 // update add prop
 // let person = {
 //     name:"abhi",
-//     age:20
-// }
-// let user = {...person,age:30,gender:'M'};
-// console.log(user);
+// //     age:20
+// // }
+// // let user = {...person,age:30,gender:'M'};
+// // console.log(user);
 
 
-// Deep Copy -> copy all the items of one ovject to another .No shared reference
+// // Deep Copy -> copy all the items of one ovject to another .No shared reference
 
-// structredClone
+// // structredClone
 
 // let person ={
 //     name:"Abhi",
@@ -144,9 +144,11 @@ console.log(result);
 //     }
 // }
 
-// let user = structuredClone(person);
-// user.address.
-// // console.log(user);
+//  let user = structuredClone(person);
+//  let user1 = {...person}
+// // user.address.]
+//  console.log("User deep copy :", user);
+//  console.log("User shallow copy :", user1);
 
 // // linear serach 
 // // let arr =  [4,5,6,9,8];
@@ -229,13 +231,41 @@ console.log(result);
 // console.log(num);
 // num =10;
 // console.log(num);
-function print(){
-   const num=9;
-    console.log(num);
+// function print(){
+//    const num=9;
+//     console.log(num);
+// }
+// print();
+// console.log(num);
+
+// let x = 10;
+// function outer(){
+//     let x = 20;
+//     if(true){
+//         let x = 30;
+//         console.log(x);
+//     }
+//     console.log(x);
+// }
+// outer();
+// console.log(x)
+
+// const user = {
+//     name:"Riya",
+//     address: { city: "Pune", pincode: 411045}
+// };
+// // console.log(user);
+// function findFactorial(n){
+//     let factorial =1;
+//     for(let i =0; i<=n; i++){
+//         factorial*=i;
+//     }
+//     return factorial;
+// }
+// console.log(findFcatorial(9));
+let str = "apple";
+let reversedStr ="";
+for(let i =str.length -1; i>=0; i--){
+    reversedStr += str[i];
 }
-print();
-console.log(num);
-
-
-
-
+console.log(reversedStr);
