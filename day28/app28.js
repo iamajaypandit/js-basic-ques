@@ -160,38 +160,133 @@
 // if marks are equal sort it based 
 // on age in ascending order
 
-let students=[
-    {
-       name:"Abhishek",
-       age:20,
-       marks:45
+// let students=[
+//     {
+//        name:"Abhishek",
+//        age:20,
+//        marks:45
 
-    },
-    {
-        name:"Naman",
-       age:21,
-       marks:97
-    },
-    {
-        name:"Shravan",
-       age:19,
-       marks:35
-    },
-]
-function comp(a,b){
+//     },
+//     {
+//         name:"Naman",
+//        age:21,
+//        marks:97
+//     },
+//     {
+//         name:"Shravan",
+//        age:19,
+//        marks:35
+//     },
+// ]
+// function comp(a,b){
     
-    if(a.marks == b.marks)
-        return a.age - b.age;
+//     if(a.marks == b.marks)
+//         return a.age - b.age;
+//     else
+//         return b.marks - a.marks;
+// }
+// students.sort(comp);
+// console.log(students);
+
+// let arr3 = [4,8,1,3,6];
+// arr3.sort();
+// console.log(arr3);
+
+// let arr4 = [12,5,4,0,11];
+// arr4.sort((a,b)=>b-a);
+// console.log(arr4);
+
+// question 1
+// sort the array in ascending order based on length of the words 
+// let arr = ["raman", "ram", "atul"];
+// function comp(a,b){
+//   return a.length - b.length;
+// }
+// arr.sort(comp);
+// console.log(arr);
+
+// localCompare()
+// console.log(a.localCompare(b));
+// a is lexographically greater -> 1
+// b is lexigraphically greater ->1
+// same string then -> 0
+// let a  = "apple";
+// let b = "abple";
+// console.log(a.localeCompare(b));
+
+// given a array of  words sort it in reverse lexigraphical order 
+// let arr = ["raman", "ram", "atul"];
+// function comp(a,b){
+//     return b.localeCompare(a);
+// }
+// arr.sort(comp);
+// console.log(arr);
+
+// sort the arr based on age and if age is equal sort it based on lexicographical oreder of name
+let students = [
+    {
+        name: "Abhishek",
+        age:30
+    },
+    {
+        name: "Akriti",
+        age: 45,
+    },
+    {
+        name: "Aansh",
+        age: 45,
+    }
+];
+function comp(a,b){
+    if(a.age==b.age)
+        return a.name.localeCompare(b.name);
     else
-        return b.marks - a.marks;
+        return a.age-b.age;
 }
 students.sort(comp);
 console.log(students);
+console.log(!true);
 
-let arr3 = [4,8,1,3,6];
-arr3.sort();
-console.log(arr3);
+// let n = 4989384;
+// let count =0;
+// while(n>0){
+//     let last_digit = n%10;
+//     count++;
+//     n = Math.floor(n/10);
+// }
+// console.log(count);
 
-let arr4 = [12,5,4,0,11];
-arr4.sort((a,b)=>b-a);
-console.log(arr4);
+// given a num reverse the num
+// let n =656753;
+// let rev = " ";
+// let temp = 0;
+// while(n>0){
+//     let last_digit =n%10;
+//     rev =rev+last_digit;
+//     n = Math.floor(n/10);
+// }
+// console.log(rev);
+
+// approach 2
+let n = 7478368298;
+let rev =" ";
+while(n>0){
+    let last_digit = n%10
+    rev = rev*10+last_digit;
+    n = Math.floor(n/10);
+}
+console.log(rev);
+
+// question 
+let words = 'A paragraph is a group of sentences that revolve around a single main idea, providing clarity and coherence to writing. For example, consider the topic of environmental conservation: Protecting the environment is essential for maintaining the health of our planet and future generations.  ' 
+// // select random 5 words
+let wordsArr=words.split(" ");
+for(let i=0;i<5;i++){
+    console.log(wordsArr[Math.floor(Math.random()*(wordsArr.length-1))]);
+}
+
+
+
+// generate num bw 1 to 10 
+let num = Math.floor(Math.random()*10+1);
+console.log(num);
